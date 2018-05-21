@@ -48,8 +48,8 @@ namespace simpleSendMessage
             var url = HttpContext.Current.Request.Url;
             //We now tell the user that we will talk to them in a few seconds
             await context.PostAsync("Hello! In a few seconds I'll send you a message proactively to demonstrate how bots can initiate messages. You can also make me send a message by accessing: " +
-                    url.Scheme + "://" + url.Host + ":" + url.Port + "/api/CustomWebApi");
-            context.Wait(MessageReceivedAsync);
+                    url.Scheme + "://" + "agatbot.azurewebsites.net"  + "/api/CustomWebApi"); //url.Host + ":" + url.Port
+			context.Wait(MessageReceivedAsync);
         }
         public void timerEvent(object target)
         {
