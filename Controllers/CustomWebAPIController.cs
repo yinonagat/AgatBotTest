@@ -16,7 +16,7 @@ namespace simpleSendMessage.Controllers
         [HttpGet]
 
         [Route("api/CustomWebAPI")]
-        public async Task<HttpResponseMessage> SendMessage()
+        private async Task<HttpResponseMessage> SendMessage()
         {
             try
             {
