@@ -11,7 +11,7 @@ using System.Web.Http.Description;
 
 namespace simpleSendMessage
 {
-    [BotAuthentication]
+   // [BotAuthentication]
     public class MessagesController : ApiController
     {
         /// <summary>
