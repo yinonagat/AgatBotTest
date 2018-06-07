@@ -22,7 +22,9 @@ namespace simpleSendMessage
         [ResponseType(typeof(void))]
         public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity)
         {
-            if (activity != null)
+			MicrosoftAppCredentials.TrustServiceUrl("http://agatbot4.azurewebsites.net");
+
+			if (activity != null)
             {
                 // one of these will have an interface and process it
                 switch (activity.GetActivityType())

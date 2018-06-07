@@ -32,8 +32,6 @@ namespace simpleSendMessage
            
             IMessageActivity message = Activity.CreateMessageActivity();
 
-			MicrosoftAppCredentials.TrustServiceUrl("http://agatbot4.azurewebsites.net");
-
 			if (!string.IsNullOrEmpty(conversationId) && !string.IsNullOrEmpty(channelId))
             {
                 message.ChannelId = channelId;
