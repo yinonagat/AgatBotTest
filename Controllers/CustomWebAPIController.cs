@@ -20,6 +20,7 @@ namespace simpleSendMessage.Controllers
         {
             try
             {
+
                 if (!string.IsNullOrEmpty(ConversationStarter.fromId))
                 {
                     await ConversationStarter.Resume(ConversationStarter.conversationId, ConversationStarter.channelId); //We don't need to wait for this, just want to start the interruption here
